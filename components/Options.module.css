@@ -1,0 +1,52 @@
+.options {
+  margin: 70px 0;
+}
+
+@media (max-width: 767px) {
+  .options {
+    margin: 25px 0;
+  }
+}
+
+.options .options_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+@media (max-width: 991px) {
+  .options .options_cards {
+    gap: 20px;
+  }
+}
+
+.options .options_card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 567px) {
+  .options .options_cards {
+    grid-template-columns: 1fr;
+  }
+  .options .options_card a {
+    max-width: 400px;
+    margin: auto;
+  }
+}
+
+.options .options_card .image_wrapper {
+  background: #ffffff;
+  box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.options .options_card {
+  text-align: center;
+  text-transform: capitalize;
+  color: #7f2736;
+  font-weight: 500;
+}
